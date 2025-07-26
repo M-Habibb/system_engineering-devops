@@ -1,0 +1,2 @@
+#!/bin/bash
+# This script sets the permission of the file hello so that only others have rwx
