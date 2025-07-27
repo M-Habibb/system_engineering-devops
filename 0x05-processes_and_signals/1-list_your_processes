@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# List all users with running processes (without duplicates and no header)
+# A Bash script that lists processes of the current user
 
-ps aux | awk 'NR>1 {print $1}' | sort | uniq
+ps -u "$USER" -o user=
