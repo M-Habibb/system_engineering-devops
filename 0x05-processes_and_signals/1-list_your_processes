@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# List all processes running for the current user
+# Script that lists current processes without header line
 
-ps -u "$USER"
+ps -eo user,pid,cmd --no-headers
