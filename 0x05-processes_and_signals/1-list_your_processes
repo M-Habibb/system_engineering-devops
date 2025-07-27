@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# List all processes running for the current user
+
+ps -u "$USER"
