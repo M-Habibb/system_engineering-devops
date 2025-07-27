@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Script that lists current processes without header line
+# List all users with running processes (without duplicates and no header)
 
-ps -eo user,pid,cmd --no-headers
+ps aux | awk 'NR>1 {print $1}' | sort | uniq
