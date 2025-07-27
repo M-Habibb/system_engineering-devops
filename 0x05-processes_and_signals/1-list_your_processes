@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that lists the usernames of running processes
+# A Bash script that prints the current user
 
-ps -eo user= | grep "^$USER$"
+whoami
